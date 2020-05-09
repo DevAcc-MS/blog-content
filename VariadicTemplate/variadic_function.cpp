@@ -10,7 +10,7 @@ void simple_printf(const char* fmt...) {
         if(*fmt == 'd') {
             int i = va_arg(args, int);
             std::cout << i << '\n';
-        } else (*fmt == 'c') {
+        } else if (*fmt == 'c') {
             int c = va_arg(args, int);
             std::cout << static_cast<char>(c) << '\n';
         } else if (*fmt == 'f') {
